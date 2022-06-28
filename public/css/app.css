@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'DentonTestRegular';
+    src: url('../fonts/DentonTest-Regular.otf');
+}
+
+@font-face {
+    font-family: 'DentonTestBold';
+    src: url('../fonts/DentonTest-Bold.otf');
+}
+
+body {
+    color: #282828;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'DentonTestBold', 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    margin: 0.5rem;
+    border-radius: 0.5em;
+}
+
+.home-screen {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-paragraph {
+    color: #676767;
+    font-family: 'DentonTestRegular', 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 0.5rem;
+}
