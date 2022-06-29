@@ -16,7 +16,10 @@ app.get('/', (_req: Request, res: Response) => {
     res.render('index');
 });
 
-app.get("/news/")
+app.get("/news/:news_name", (req: Request, res: Response) => {
+    const news_title: string = req.params.news_name;
+    res.render('news', {news_title});
+})
 
 app.listen(port, () => {
     console.log('listening on port ' + port);

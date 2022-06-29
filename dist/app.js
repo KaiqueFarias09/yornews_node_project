@@ -13,7 +13,10 @@ app.set('views', path_1.default.join(__dirname, '../views'));
 app.get('/', (_req, res) => {
     res.render('index');
 });
-app.get("/news/");
+app.get("/news/:news_name", (req, res) => {
+    const news_title = req.params.news_name;
+    res.render('news', { news_title });
+});
 app.listen(port, () => {
     console.log('listening on port ' + port);
 });
